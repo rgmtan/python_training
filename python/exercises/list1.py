@@ -38,11 +38,7 @@ def front_x(words):
             has_front_x.append(s)
         else:
             no_front_x.append(s)
-
-    has_front_x.sort()
-    no_front_x.sort()
-    has_front_x.extend(no_front_x)
-    return has_front_x
+    return sorted(has_front_x) + sorted(no_front_x)
 
 # C. sort_last
 # Given a list of non-empty tuples, return a list sorted in increasing
