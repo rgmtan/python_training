@@ -34,7 +34,7 @@ def front_x(words):
     no_front_x = []
 
     for s in words:
-        if 'x' in s[0]:
+        if s.startswith('x'):
             has_front_x.append(s)
         else:
             no_front_x.append(s)
